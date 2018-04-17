@@ -1,6 +1,7 @@
 import { App } from './App.js'
 export class RenderView {
     constructor() {
+        this._element = document.getElementById('response')
         this.render()
     }
 
@@ -11,7 +12,7 @@ export class RenderView {
             let name = document.getElementById('name').value
             app.getApiResponse(name)
                 .then(response => {
-                    this.element.innerHTML = `   
+                    this._element.innerHTML = `   
                         <div class="msg">
                             <h1>${response}</h1>
                         </div>
