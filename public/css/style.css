@@ -1,0 +1,23 @@
+.container{
+    width: 50%
+}
+.main{
+    width: 50%;
+    padding-top: 50px;
+    margin: 0 auto 0 auto;
+    text-align: center
+}
+
+.main form{
+    padding: 30px
+}
+
+.msg{
+    background: #009191;
+    padding: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%
+}
