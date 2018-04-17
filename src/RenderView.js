@@ -1,7 +1,6 @@
 import { App } from './App.js'
 export class RenderView {
     constructor() {
-        this.element = document.getElementById('response')
         this.render()
     }
 
