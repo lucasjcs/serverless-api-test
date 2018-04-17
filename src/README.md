@@ -1,0 +1,1 @@
+# Exemplo de aplicação que realiza request ao Azure Functions
