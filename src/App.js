@@ -2,11 +2,13 @@ export class App {
     constructor() {
 
     }
-
-    getApiResponse(name) {
-        let dataRes = fetch('https://functions-doc-tcc.azurewebsites.net/api/hello-world-test?name=' + name)
+    getApiResponse(URL) {
+        let dataRes = fetch(URL)
             .then(response => response.json())
-            .then(data => this._datar = data)
+            .then(data => data = data)
         return dataRes
+        
     }
 }
+
+// https://functions-doc-tcc.azurewebsites.net/api/hello-world-test?name=

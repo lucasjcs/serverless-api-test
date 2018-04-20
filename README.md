@@ -1,1 +1,1 @@
-# Exemplo de aplicação que realiza request ao Azure Functions
+# Exemplo de aplicação que realiza requests à plataformas serverless
