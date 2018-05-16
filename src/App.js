@@ -10,5 +10,3 @@ export class App {
         
     }
 }
-
-// https://functions-doc-tcc.azurewebsites.net/api/hello-world-test?name=

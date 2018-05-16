@@ -12,13 +12,13 @@ export class RenderView {
         document.getElementById('form-sub').addEventListener('submit', event => {
             let name = document.getElementById('name').value
             let data
-            if(name == "google" || name == "Google") this._URL = 'https://us-central1-cloud-functions-test-01.cloudfunctions.net/helloGET'
-            if(name == "azure"  || name == "Azure" ) this._URL = 'https://functions-doc-tcc.azurewebsites.net/api/hello-world-test'
+            if(name == "google" || name == "Google") this._URL = 'YOUR_LINK_API'
+            if(name == "azure"  || name == "Azure" ) this._URL = 'YOUR_LINK_API'
             app.getApiResponse(this._URL)
                 .then(response => {
 
                     if(name == "google" || name == "Google") data = response.data
-                    if(name == "azure"  || name == "Azure" ) data = response;
+                    if(name == "azure"  || name == "Azure" ) data = response
 
                     this._element.innerHTML = `   
                         <div class="msg">
@@ -26,7 +26,9 @@ export class RenderView {
                         </div>
                     `
                 })
+
             event.preventDefault()
+
         })
 
     }
